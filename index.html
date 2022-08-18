@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Arturo Perez Noriega</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+
+            <img src="Vector.png" alt="logo alura">
+            <h1 class="tituloLogo">Encriptador</h1>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="encriptador">
+                <form class="encriptador_formulario">
+                    <div class="textArea">
+                        <textarea name="texto" id="texto" class="texto" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="textInfo">
+                            <div class="info">
+                                <img src="circulo_info.png">
+                                <p id="info">Solo letras minusculas</p>
+                            </div>
+
+                        </div>
+
+                        <div class="botones">
+                            <button onclick="encriptar()" id="encriptado" class="boton_encriptado" type="button"> Encriptar</button>
+                            <button id="desencriptado" class="boton_desencriptado" type="button"> Desencriptar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="resultado">
+                    <div class="conteiner_result">
+                        <div class="noresuelto" id="noresuelto">
+                            <div class="imagen_muneco">
+                                <img src="Muñeco.png" alt="Muñeco">
+                            </div>
+                            <p>Ningun mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desses encriptar o Desencriptar</p>
+                        </div>
+
+                        <div class="resulto" id="resuelto">
+                            <textarea name="textresuelto" id="textresultado" disabled></textarea>
+                            <button id="copiar" type="button">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">© Creado por <a href="https://www.linkedin.com/in/arturo-perez-noriega/"> Arturo Perez
+                Noriega</a></p>
+    </footer>
+
+</body>
+
+</html>
